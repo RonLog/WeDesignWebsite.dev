@@ -1,0 +1,549 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+}
+
+header input {
+    display: none;
+}
+
+header input:checked~nav {
+    display: block;
+}
+
+header label::before {
+    content: "\2261";
+    font-size: 50px;
+    color: rgb(250, 50, 147);
+}
+
+header input:checked+label::before {
+    content: "\00d7";
+}
+
+.logo {
+    margin-left: 50px;
+}
+
+.menu {
+    margin-right: 50px;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 100vh;
+    background-color: lightgray;
+    border-radius: 20px;
+
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 0;
+    height: 80vh;
+}
+
+nav ul li {
+    margin: 10px 0px;
+    font-weight: bold;
+    color: rgb(250, 50, 147);
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.homes {
+    background-image: url("./img/wedesignhomebanner.jpg");
+    background-size: 100vw 70%;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    border: 2px solid black;
+}
+
+.homes1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.homes1 h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.homes1 button {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(236, 12, 92);
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid white;
+    align-self: center;
+}
+
+.homes1 button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(132, 12, 86);
+}
+
+.homes2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10vw;
+}
+
+.banner1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    border: 2px solid black;
+}
+
+.subbanner1 h1 {
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.subbanner1 p {
+    font-size: 20px;
+    width: 50vw;
+    margin: 50px auto;
+}
+
+.subbanner1 button {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid rgb(247, 8, 72);
+    background-color: rgb(247, 8, 72);
+    color: white;
+}
+
+.subbanner1 button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(247, 8, 72);
+}
+
+.subbanner2-position {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.subbanner2 .ban2imag1 {
+    position: absolute;
+    bottom: 40%;
+    left: 5%;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+    transform: translate();
+}
+
+.subbanner2 .ban2imag3 {
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0;
+    left: 30%;
+    z-index: 2;
+    height: 100%;
+    width: 50%;
+}
+
+.subbanner2 .ban2imag2 {
+    border: 10px solid white;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 15%;
+    bottom: 0;
+    z-index: 3;
+}
+
+.whitecirle {
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    border: 20px solid rgb(247, 8, 72);
+}
+
+.grdientcircle {
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(rgb(246, 25, 66), rgb(242, 170, 22));
+}
+
+.banner2 {
+    background-image: url("./img/wedesignbanner2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.banner2 h1 {
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.banner2 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.banner3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.banner3-gradient {
+    position: relative;
+    margin-top: -100vh;
+    top: 110vh;
+    left: 10vw;
+    z-index: -1;
+    background: linear-gradient(rgb(246, 25, 66), rgb(242, 170, 22));
+    height: 130vh;
+    width: 35vw;
+}
+
+.gallary {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    gap: 15px;
+}
+
+.gallary>* {
+    width: 300px;
+    transition: 0.7s;
+}
+
+.gallary>div:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.gallary img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    background-color: lightgray;
+    align-self: flex-end;
+}
+
+.portfolio h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.portfolio p {
+    font-size: 20px;
+    width: 20vw;
+    margin: 20px auto;
+}
+
+.portfolio button {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid rgb(247, 8, 72);
+    background-color: rgb(247, 8, 72);
+    color: white;
+}
+
+.portfolio button:hover {
+    cursor: pointer;
+    background-color: lightgray;
+    color: rgb(247, 8, 72);
+}
+
+.banner4 {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    border: 2px solid black;
+}
+
+.banner4-sub1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner4-sub1 h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.banner4-sub1 p {
+    font-size: 20px;
+    width: 40vw;
+    text-align: center;
+}
+
+.banner4-sub2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.banner4-sub2>* {
+    width: 32%;
+    flex-grow: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.7s;
+}
+
+.banner4-sub2>div:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.banner4-sub2 img {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.banner4-sub2 ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+.banner4-sub2 ul li::before {
+    content: "—";
+    margin-right: 10px;
+}
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid black;
+}
+
+.clients h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.clients p {
+    font-size: 20px;
+    width: 40vw;
+}
+
+.clients button {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid rgb(247, 8, 72);
+    background-color: rgb(247, 8, 72);
+    color: white;
+}
+
+.clients button:hover {
+    cursor: pointer;
+    background-color: lightgray;
+    color: rgb(247, 8, 72);
+}
+
+.clients img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.clientslogo {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.clientslogo img {
+    height: 200px;
+}
+
+.follow {
+    background-image: url("./img/wedesignbanner2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.follow form {
+    border-radius: 15%;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    gap: 20px;
+}
+
+.follow h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.icons i {
+    padding: 10px 10px;
+    font-size: 40px;
+    border-radius: 50%;
+}
+
+.icons i:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.follow input[type="text"] {
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.follow button {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid rgb(247, 8, 72);
+    background-color: rgb(247, 8, 72);
+    color: white;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.follow button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+footer {
+    background-color: rgb(51, 51, 51);
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer>* {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .portfolio p {
+        width: auto;
+    }
+
+    .clients p {
+        width: auto;
+    }
+
+    .follow input[type="text"] {
+        width: 90vw;
+    }
+
+    .follow button {
+        width: 90vw;
+    }
+
+    .icons i {
+        padding: 10px 5px;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    .follow form {
+        border-radius: 10%;
+    }
+
+    .subbanner2 .ban2imag3 {
+        top: 0;
+        left: 0%;
+        z-index: 2;
+        height: 40%;
+        width: 95%;
+    }
+
+    .grdientcircle {
+        bottom: 18%;
+        left: 10%;
+    }
+
+    .whitecirle {
+        z-index: 3;
+        left: 30%;
+    }
+
+    .banner4-sub2>* {
+        width: auto;
+    }
+}
